@@ -173,7 +173,7 @@ def reportCard(student_id):
             divs += 1
             total_marks += temp.get(student_id)
             f.write(subject_marks)
-    grade = "Grade obtained: " + gradeCheck(total_marks) + " \n"
+    grade = "Grade obtained: " + gradeCheck(total_marks/divs) + " \n"
     f.write(grade)
     f.close()
 
